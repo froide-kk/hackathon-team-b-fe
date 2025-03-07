@@ -49,6 +49,26 @@ const CustomTheme = createTheme({
     },
     divider: "rgba(0, 0, 0, 0.12)",
   },
+  typography: {
+    fontFamily: "'Roboto', 'Noto Sans JP', sans-serif",
+    allVariants: {
+      color: "#170a35",
+      fontSize: 16,
+      lineHeight: 1.8,
+      fontWeight: 400,
+    },
+    h1: {
+      fontSize: 40,
+      fontWeight: 800,
+      marginBottom: "12px",
+      color: "#25221E",
+    },
+    subtitle1: {
+      fontSize: 20,
+      marginBottom: "8px",
+      color: "rgba(0, 0, 0, 0.8)",
+    },
+  },
 });
 
 export default CustomTheme;
