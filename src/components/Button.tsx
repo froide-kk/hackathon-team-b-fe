@@ -19,6 +19,10 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         border: "1px solid",
         borderColor: "primary.main",
         textTransform: "none",
+        "&.Mui-disabled": {
+          border: "1px solid",
+          borderColor: "#E0E0E0",
+        },
         "&:hover": {
           boxShadow: "none",
           color: "primary.main",
