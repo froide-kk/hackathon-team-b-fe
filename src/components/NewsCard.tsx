@@ -59,7 +59,7 @@ export default function NewsCard({
             >
               <Link />
             </Button>
-            {page === "Bookmark" ? (
+            {page === "Boomark" ? (
               <></>
             ) : (
               <Button onClick={handleFavoriteClick}>

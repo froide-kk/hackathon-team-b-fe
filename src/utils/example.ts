@@ -103,3 +103,33 @@ export const newsNotificationHistory = [
       "My cat will leap on my stomach at 5:00 AM every morning, bouncing up and down and screaming in my face that he is hungry. And then I find myself rolling out of bed and dragging myself to the kitchen … [+2057 chars]",
   },
 ];
+
+export const favoritesNews = {
+  articles: [
+    {
+      article_id: 3,
+      title: "タイトル",
+      url: "asdfghj",
+      description: "説明",
+      url_to_image: "qwertyuiop",
+      published_at: "2025-02-27T19:05:24Z",
+    },
+    {
+      article_id: 4,
+      title: "タイトル",
+      url: "asdfghj",
+      description: "説明",
+      url_to_image: "qwertyuiop",
+      published_at: "2025-02-27T19:05:24Z",
+    },
+    {
+      article_id: 5,
+      title: "タイトル",
+      url: "asdfghj",
+      description: "説明",
+      url_to_image: "qwertyuiop",
+      published_at: "2025-02-27T19:05:24Z",
+    },
+  ],
+  oshiel_id: 1,
+};
