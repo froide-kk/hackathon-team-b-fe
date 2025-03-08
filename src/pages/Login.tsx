@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import CustomButton from "../components/Button";
 import { useNavigate } from "react-router-dom";
+import newsImg from "../assets/oshiel_news.png";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -45,13 +46,9 @@ export default function Login() {
           sx={{ my: 4, height: "auto" }}
           onClick={handleClick}
         />
-        {/* <Box
-          height={500}
-          width="70%"
-          sx={{ mt: 4, backgroundColor: "divider" }}
-        >
-          画像を差し込む
-        </Box> */}
+      </Box>
+      <Box width="100%" sx={{ mt: 2, p: 2, boxShadow: 2 }}>
+        <img src={newsImg} alt="oshiel news list page" width="100%" />
       </Box>
     </Container>
   );

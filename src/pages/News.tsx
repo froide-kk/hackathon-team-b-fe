@@ -47,9 +47,9 @@ export default function News() {
           direction="row"
           justifyContent="space-between"
           alignItems="center"
-          padding={2}
+          pt={2}
         >
-          <Typography variant="h5">ニュース</Typography>
+          <Typography variant="subtitle1">ニュース</Typography>
           <Button
             variant="contained"
             size="small"
