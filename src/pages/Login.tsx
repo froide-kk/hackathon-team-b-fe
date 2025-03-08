@@ -2,8 +2,12 @@ import { Box, Container, Typography } from "@mui/material";
 import CustomButton from "../components/Button";
 
 export default function Login() {
+  const clientId = import.meta.env.VITE_SLACK_CLIENT_ID;
+  const redirectUri = import.meta.env.VITE_SLACK_REDIRECT_URI;
+  const userScopes = import.meta.env.VITE_SLACK_USER_SCOPES;
+
   const handleClick = () => {
-    alert("Slack APIへ");
+    window.location.href = `https://slack.com/openid/connect/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${userScopes}`;
   };
 
   return (
