@@ -20,7 +20,7 @@ const CustomTheme = createTheme({
       paper: "#dbe5f6",
     },
     text: {
-      primary: "#170a35",
+      primary: "#0a1035",
       secondary: "#3b5ba7",
     },
     error: {
@@ -52,7 +52,7 @@ const CustomTheme = createTheme({
   typography: {
     fontFamily: "'Roboto', 'Noto Sans JP', sans-serif",
     allVariants: {
-      color: "#170a35",
+      color: "#0a1035",
       fontSize: 16,
       lineHeight: 1.8,
       fontWeight: 400,
