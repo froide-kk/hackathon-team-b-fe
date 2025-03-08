@@ -1,8 +1,12 @@
 import axios from "axios";
 
 // ローカルストレージから JWT トークンを取得する関数
-const getAuthToken = (): string | null => {
-  return localStorage.getItem("jwt_token"); // ローカルストレージに保存されたトークンを取得
+export const getAuthToken = (): string | null => {
+  return localStorage.getItem("authId"); // ローカルストレージに保存されたトークンを取得
+};
+
+export const deleteAuthToken = (): void => {
+  localStorage.removeItem("authId"); // ローカルストレージからトークンを削除
 };
 
 // axios インスタンスの作成
@@ -25,5 +29,15 @@ axiosInstance.interceptors.request.use(
   },
   (error) => Promise.reject(error),
 );
+
+export const fetchData = async (url: string) => {
+  try {
+    const response = await axiosInstance.get(url); // GETリクエストを送信
+    return response.data; // レスポンスデータを返す
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error; // エラーを再スロー
+  }
+};
 
 export default axiosInstance;

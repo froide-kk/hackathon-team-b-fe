@@ -1,9 +1,13 @@
 import { Box, Container, Typography } from "@mui/material";
 import CustomButton from "../components/Button";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    alert("Slack APIへ");
+    localStorage.setItem("authId", "dummy-auth-token");
+    navigate("/news");
   };
 
   return (
@@ -37,17 +41,17 @@ export default function Login() {
         width="100%"
       >
         <CustomButton
-          label="Slack で oshiel を始める"
+          label="oshiel を始める"
           sx={{ my: 4, height: "auto" }}
           onClick={handleClick}
         />
-        <Box
+        {/* <Box
           height={500}
           width="70%"
           sx={{ mt: 4, backgroundColor: "divider" }}
         >
           画像を差し込む
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   );
