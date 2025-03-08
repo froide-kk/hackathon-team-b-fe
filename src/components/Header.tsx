@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Toolbar, styled } from "@mui/material";
+import { AppBar, Box, Button, Toolbar, Tooltip, styled } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import logo from "../assets/oshiel.png";
@@ -40,7 +40,9 @@ const Header = () => {
     <MyAppBar position="fixed" elevation={0}>
       <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
-          <img src={logo} alt="oshiel logo" height={40} />
+          <Tooltip title="リスの前歯は一生伸び続けるっス" arrow>
+            <img src={logo} alt="oshiel logo" height={40} />
+          </Tooltip>
         </Box>
         {token && (
           <Box>

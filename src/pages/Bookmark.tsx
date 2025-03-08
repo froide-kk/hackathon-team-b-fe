@@ -1,20 +1,20 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import NewsList from "../components/NewsList";
 import { news } from "../utils/example";
 
 export default function Bookmark() {
   return (
     <Container maxWidth="xl" sx={{ pt: 8 }}>
-      <Box py={2}>
+      <Box pt={2}>
         <Stack
           direction="row"
           justifyContent="space-between"
           alignItems="center"
-          padding={2}
         >
-          <Typography variant="h5">お気に入り</Typography>
+          <Typography variant="subtitle1">お気に入り</Typography>
         </Stack>
       </Box>
+      <Divider />
       <NewsList news={news} page="Bookmark" />
     </Container>
   );
